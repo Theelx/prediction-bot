@@ -1,10 +1,15 @@
 {
   "BOT_TOKEN": "XXXXXXXX",
   "CLIENT_ID": "XXXXXXXX",
+  // This is for registering slash command updates immediately if this is a personal guild bot
   "GUILD_ID": "XXXXXXXX",
   "DB_PASSWORD": "XXXXXXXX",
   "INITIAL_BALANCE": 10000,
   "MAX_BET": 250000,
   "MIN_BET": 100,
   "MOD_LIST": ["XXXXXXXX", "XXXXXXXX"],
+  // This is for mapping user IDs to names if you want to call out people lol
+  "NAME_MAPPING": {
+    "XXXXXXXX": "John Smith"
+  }
 }
