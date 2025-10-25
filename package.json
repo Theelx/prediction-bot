@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jgoping/prediction-bot#readme",
   "dependencies": {
-    "discord.js": "^12.5.1",
+    "discord.js": "^14.23.2",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
