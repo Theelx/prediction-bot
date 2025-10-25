@@ -78,8 +78,6 @@ In `config.json`, there are some properties that must be set as part of the set 
 
 ## Payout
 When a prediction gets answered with `/result`, the payout math is detailed in the following mermaid.js diagram:
-![Payout diagram](./images/payout_flowchart.svg)
-This math was designed to keep a fixed amount of money in the system at any given time while remaining fair. The diagram was produced with the following mermaid code:
 ```mermaid
 %%{ init: { 'flowchart': { 'wrappingWidth': 250, 'padding': 6, 'nodeSpacing': 20 } } }%%
 graph TD
@@ -119,6 +117,7 @@ graph TD
     B -- No --> Z;
     Z --> Z_END((End Settlement));
 ```
+This math was designed to keep a fixed amount of money in the system at any given time while remaining fair.
 
 ## TODO
 - [ ] Separate users, predictions, and bets by guild id so the same bot can be used for multiple guilds without everything being global
