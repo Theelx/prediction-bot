@@ -11,5 +11,6 @@
   // This is for mapping user IDs to names if you want to call out people lol
   "NAME_MAPPING": {
     "XXXXXXXX": "John Smith"
-  }
+  },
+  "BLAME_NAME": "Jane Doe"
 }

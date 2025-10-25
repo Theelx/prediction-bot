@@ -63,17 +63,18 @@ To add this to your local discord server, there are a few steps:
 
 ## Config file options
 In `config.json`, there are some properties that must be set as part of the set up process:
-| Property        | Default Value | Description                                     |
-|-----------------|---------------|-------------------------------------------------|
-| BOT_TOKEN       |               | Token of the Discord bot to connect to          |
-| CLIENT_ID       |               | ID of the Discord bot to connect to             |
-| GUILD_ID        |               | ID of the server to register slash commands for |
-| DB_PASSWORD     |               | Password to connect to the MySQL Database       |
-| INITIAL_BALANCE | 10000         | Balance a user gets when they register          |
-| MAX_BET         | 250000        | The maximum bet size                            |
-| MIN_BET         | 100           | The minimum bet size                            |
-| MOD_LIST        |               | List containing Discord IDs of moderators       |
-| NAME_MAPPING    |               | Map of Discord IDs to names (optional)          |
+| Property        | Default Value | Description                                        |
+|-----------------|---------------|----------------------------------------------------|
+| BOT_TOKEN       |               | Token of the Discord bot to connect to             |
+| CLIENT_ID       |               | ID of the Discord bot to connect to                |
+| GUILD_ID        |               | ID of the server to register slash commands for    |
+| DB_PASSWORD     |               | Password to connect to the MySQL Database          |
+| INITIAL_BALANCE | 10000         | Balance a user gets when they register             |
+| MAX_BET         | 250000        | The maximum bet size                               |
+| MIN_BET         | 100           | The minimum bet size                               |
+| MOD_LIST        |               | List containing Discord IDs of moderators          |
+| NAME_MAPPING    |               | Map of Discord IDs to names (optional)             |
+| BLAME_NAME      |               | Blame them if users bet too many points (optional) |
 
 ## Payout
 When a prediction gets answered with `/result`, the payout math is detailed in the following mermaid.js diagram:
@@ -118,3 +119,9 @@ graph TD
     B -- No --> Z;
     Z --> Z_END((End Settlement));
 ```
+
+## TODO
+- [ ] Separate users, predictions, and bets by guild id so the same bot can be used for multiple guilds without everything being global
+- [ ] Implement created_at field for predictions and bets
+- [ ] Migrate to GitHub Actions for tests
+- [ ] Write tests for new features
