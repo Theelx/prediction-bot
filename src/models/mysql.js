@@ -62,12 +62,12 @@ class MySQLModel {
 
   // predictions
 
-  async createPrediction(question, allowedAnswersStr) {
+  async createPrediction(id, question, allowedAnswersStr) {
     const sql = `
       INSERT INTO predictions (id, question, allowed_answers, is_open)
       VALUES (?, ?, ?, TRUE)
     `;
-    const res = await this.query(sql, [question, allowedAnswersStr]);
+    const res = await this.query(sql, [id, question, allowedAnswersStr]);
     return res.insertId;
   }
 

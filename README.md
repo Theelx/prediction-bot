@@ -5,7 +5,7 @@
 
 This bot is forked from the great https://github.com/jgoping/prediction-bot due to the original's relative lack of features and unmaintained status (last update was 4 years ago as of this writing). Go check it out if you want inspiration!
 
-This is a Discord bot to run predictions, inspired by the Twitch prediction system but with a few additions to make it more Discord-like. When added to a server, anyone can begin a prediction with the !question command. Users in the server can predict with their points, and a mod or the person who asked the question can mark the question as ready for a payout when the result/outcomes is given. The payout in this is a bit more complicated than doubling points if correct, so it gets its own section at the end.
+This is a Discord bot to run predictions, inspired by the Twitch prediction system but with a few additions to make it more Discord-like. When added to a server, anyone can begin a prediction with the /question command. Users in the server can predict with their points, and a mod or the person who asked the question can mark the question as ready for a payout when the result/outcomes is given. The payout in this is a bit more complicated than doubling points if correct, so it gets its own section at the end.
 
 This bot is written in Node.js with the discord.js module.
 

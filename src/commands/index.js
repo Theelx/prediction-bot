@@ -5,9 +5,9 @@ module.exports = {
   register: require('./general/register'),
   leaderboard: require('./general/leaderboard'),
   openpredictions: require('./general/openpredictions'),
+  question: require('./general/question'),
 
   // admin
-  question: require('./admin/question'),
   close: require('./admin/close'),
   refund: require('./admin/refund'),
   result: require('./admin/result'),
